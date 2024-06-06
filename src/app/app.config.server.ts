@@ -4,8 +4,8 @@ import { appConfig } from './app.config';
 
 const serverConfig: ApplicationConfig = {
   providers: [
-    provideServerRendering()
+    provideServerRendering() // provide server side rendering functionality to the App
   ]
 };
 
-export const config = mergeApplicationConfig(appConfig, serverConfig);
+export const config = mergeApplicationConfig(appConfig, serverConfig); // merge between both cconfigs cliebnt app and server
